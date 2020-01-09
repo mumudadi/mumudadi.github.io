@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Hello World | 木木</title>
+  <title itemprop="name">Java垃圾回收机制 | 木木</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -393,19 +393,19 @@
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      Hello World</h1>
+      Java垃圾回收机制</h1>
       <p class="entry-census">
         <span>
-          <a href="">
-            <img src="">
+          <a href="https://5nptdz.coding-pages.com/">
+            <img src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/custom/avatar.jpg">
           </a>
         </span>
         <span>
-          <a href=""></a>
+          <a href="https://5nptdz.coding-pages.com/">mumudadi</a>
         </span>
         <span class="bull">
         ·</span>
-        2020-1-7<span class="bull">
+        2020-1-1<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -419,19 +419,44 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+          <h2 id="通用的分代垃圾回收机制"><a href="#通用的分代垃圾回收机制" class="headerlink" title="通用的分代垃圾回收机制"></a>通用的分代垃圾回收机制</h2><p>​        分代垃圾回收机制，是基于这样一个事实：不同的对象的生命周期是不一样的。因此，不同生命周期的对象可以采取不同的回收算法，以便提高回收效率。我们将对象分为三种状态：年轻代、年老代、持久代。JVM将堆内存划分为Eden、Survivor和Tenured/Old空间。</p>
+<ol>
+<li><p>年轻代</p>
+<p>所有新生成的对象首先都是放在Eden区。年轻代的目标就是尽可能快速的收集掉那些生命周期短的对象，对应的是Minor GC，每次Minor GC 会清理年轻代的内存，算法采用效率较高的复制算法，频繁的操作，但是会浪费内存空间。当“年轻代”区域存放满对象后，就将对象存放到年老代区域。</p>
+</li>
+<li><p>年老代</p>
+<p>在年轻代中经历了N(默认15)次垃圾回收后仍然存活的对象，就会被放到年老代中。因此可以认为年老代中存放的都是一些生命周期较长的对象。年老代对象越来越多，我们就需要启动Major GC和Full GC(全量回收)，来一次大扫除，全面清理年轻代区域和年老代区域。</p>
+</li>
+<li><p>持久代</p>
+<p>用于存放静态文件，如Java类、方法等。持久代堆垃圾回收没有显著影响。</p>
+</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/blogImg/java/Garbage.jpg" alt></p>
+<ul>
+<li><p>Minor GC：</p>
+<p>用于清理年轻代区域。Eden区满了就会触发一次Minor GC。清理无用对象，将有用对象复制到“Survivor1”、“Survivor2”区中(这两个区，大小空间也相同，同一时刻Surivor1和Surivor2只有一个在用，一个为空)</p>
+</li>
+<li><p>Major GC：</p>
+<p>用于清理年老代区域。</p>
+</li>
+<li><p>Full GC:</p>
+<p>用于清理年轻代、年老代区域。成本较高，会对系统产生影响。</p>
+</li>
+</ul>
+<h3 id="垃圾回收过程："><a href="#垃圾回收过程：" class="headerlink" title="垃圾回收过程："></a>垃圾回收过程：</h3><ol>
+<li>新创建的对象，绝大多数都会存储在Eden中</li>
+<li>当Eden满了(达到一定比例)不能创建新对象，则触发垃圾回收(GC )，将无用对象清理掉，然后剩余对象赋值到某个Survivor中，如S1，同时清空Eden区</li>
+<li>当Eden区再次满了，会将S1中的不能清空的对象存到另外一个Surivor中，如S2，同时将Eden区中的不能清空的对象，也复制到S2中，保证Eden和S1，均被清空。</li>
+<li>重复多次(默认15次)Survivor中没有被清理的对象，则会复制到老年代Old(Tenured)区中</li>
+<li>当Old区满了，则会出发一个完整地垃圾回收(FullGC)，之前新生代的垃圾回收称为(minorGC)</li>
+</ol>
+<h2 id="JVM调优和Full-GC"><a href="#JVM调优和Full-GC" class="headerlink" title="JVM调优和Full GC"></a>JVM调优和Full GC</h2><p>在对JVM调优的过程中，很大一部分工作就是对于Full GC的调节。有如下原因可能导致Full GC：</p>
+<ol>
+<li>年老代(Tenureed)被写满</li>
+<li>持久代(Perm)被写满</li>
+<li>System.gc()被显式调用(程序建议GC启动，不是调用GC)</li>
+<li>上一次GC之后Heap的各域分配策略动态变化</li>
+</ol>
 
         </div>
         <!-- .entry-content -->
@@ -463,15 +488,15 @@
           
             <div class="post-nepre half previous">
           
-            <a href="/2020/01/07/hello-world - 副本 (8)/" rel="prev">
+            <a href="/2020/01/09/Objent-oriented-Understand/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@1.2/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/5.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/5.jpg">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@1.2/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/0.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/0.jpg">
               </div>
               <span class="label">
               Previous Post</span>
               <div class="info">
                 <h3>
-                Hello World</h3>
+                理解面向对象</h3>
                 <hr>
               </div>
             </a>
@@ -481,15 +506,15 @@
           
             <div class="post-nepre half next">
           
-            <a href="/2020/01/07/hello-world - 副本 (6)/" rel="next">
+            <a href="/2020/01/01/memory-analyze/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@1.2/img/loader/orange.progress-bar-stripe-loader.svg" data-src="" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@1.2/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/1.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/1.jpg">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                Hello World</h3>
+                Java虚拟机内存分析理解</h3>
                 <hr>
               </div>
             </a>
@@ -513,16 +538,16 @@
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <a href="https://5nptdz.coding-pages.com/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/custom/avatar.jpg" itemprop="image" alt="mumudadi" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="" itemprop="url" rel="author"></a>
+            <a href="https://5nptdz.coding-pages.com/" itemprop="url" rel="author">mumudadi</a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i></p>
+        <p><i class="iconfont icon-write"></i>一个好奇的人</p>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->

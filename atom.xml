@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-01-06T18:13:43.379Z</updated>
+  <updated>2020-01-09T11:14:18.707Z</updated>
   <id>/</id>
   
   <author>
@@ -17,11 +17,91 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>理解面向对象</title>
+    <link href="/2020/01/09/Objent-oriented-Understand/"/>
+    <id>/2020/01/09/Objent-oriented-Understand/</id>
+    <published>2020-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:14:18.707Z</updated>
+    
+    <summary type="html">
+    
+      面向过程和面向对象都是对软件分析、设计和开发的一种思想，它知道着人们以不同的方式去分析、设计和开发软件。
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java垃圾回收机制</title>
+    <link href="/2020/01/01/Garbage-Collection/"/>
+    <id>/2020/01/01/Garbage-Collection/</id>
+    <published>2020-01-01T14:16:01.000Z</published>
+    <updated>2020-01-09T11:17:46.604Z</updated>
+    
+    <summary type="html">
+    
+      分代垃圾回收机制，是基于这样一个事实：不同的对象的生命周期是不一样的
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java虚拟机内存分析理解</title>
+    <link href="/2020/01/01/memory-analyze/"/>
+    <id>/2020/01/01/memory-analyze/</id>
+    <published>2020-01-01T14:16:01.000Z</published>
+    <updated>2020-01-09T10:51:45.935Z</updated>
+    
+    <summary type="html">
+    
+      Java虚拟机的内存可以分为三个区域：栈stack、堆heap、方法区method area
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>造成内存泄漏的操作</title>
+    <link href="/2020/01/01/memory-leak/"/>
+    <id>/2020/01/01/memory-leak/</id>
+    <published>2020-01-01T14:16:01.000Z</published>
+    <updated>2020-01-09T11:08:12.697Z</updated>
+    
+    <summary type="html">
+    
+      Java开发中容易造成内存泄漏的操作
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="/2020/01/07/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(11)/"/>
-    <id>/2020/01/07/hello-world - 副本 (11)/</id>
-    <published>2020-01-06T18:11:02.461Z</published>
-    <updated>2020-01-06T18:13:43.379Z</updated>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(10)/"/>
+    <id>/2019/01/09/hello-world - 副本 (10)/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:56.090Z</updated>
     
     <summary type="html">
     
@@ -40,10 +120,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/01/07/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(10)/"/>
-    <id>/2020/01/07/hello-world - 副本 (10)/</id>
-    <published>2020-01-06T18:11:02.102Z</published>
-    <updated>2020-01-06T18:13:50.879Z</updated>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(7)/"/>
+    <id>/2019/01/09/hello-world - 副本 (7)/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:29.722Z</updated>
     
     <summary type="html">
     
@@ -62,10 +142,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/01/07/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)/"/>
-    <id>/2020/01/07/hello-world - 副本 (9)/</id>
-    <published>2020-01-06T18:11:01.756Z</published>
-    <updated>2020-01-06T18:13:58.620Z</updated>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
+    <id>/2019/01/09/hello-world - 副本 (8)/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:38.257Z</updated>
     
     <summary type="html">
     
@@ -84,10 +164,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/01/07/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
-    <id>/2020/01/07/hello-world - 副本 (8)/</id>
-    <published>2020-01-06T18:11:01.442Z</published>
-    <updated>2020-01-06T18:14:07.721Z</updated>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)/"/>
+    <id>/2019/01/09/hello-world - 副本 (9)/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:46.998Z</updated>
     
     <summary type="html">
     
@@ -106,10 +186,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/01/07/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(7)/"/>
-    <id>/2020/01/07/hello-world - 副本 (7)/</id>
-    <published>2020-01-06T18:11:00.356Z</published>
-    <updated>2020-01-06T18:14:16.976Z</updated>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(6)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>/2019/01/09/hello-world - 副本 (6) - 副本/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:20.134Z</updated>
     
     <summary type="html">
     
@@ -128,10 +208,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/01/07/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(6)/"/>
-    <id>/2020/01/07/hello-world - 副本 (6)/</id>
-    <published>2020-01-06T18:10:59.830Z</published>
-    <updated>2020-01-08T11:50:17.897Z</updated>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(7)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>/2019/01/09/hello-world - 副本 (7) - 副本/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:20.134Z</updated>
     
     <summary type="html">
     
@@ -150,10 +230,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/01/07/hello-world%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>/2020/01/07/hello-world - 副本/</id>
-    <published>2020-01-06T18:10:58.298Z</published>
-    <updated>2020-01-06T18:13:34.562Z</updated>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>/2019/01/09/hello-world - 副本 (8) - 副本/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:20.134Z</updated>
     
     <summary type="html">
     
@@ -171,11 +251,11 @@
   </entry>
   
   <entry>
-    <title>Hello World1111</title>
-    <link href="/2019/12/16/hello-world/"/>
-    <id>/2019/12/16/hello-world/</id>
-    <published>2019-12-16T09:46:04.954Z</published>
-    <updated>2020-01-08T11:48:39.603Z</updated>
+    <title>Hello World</title>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>/2019/01/09/hello-world - 副本 (9) - 副本/</id>
+    <published>2019-01-09T14:16:01.000Z</published>
+    <updated>2020-01-09T11:11:20.134Z</updated>
     
     <summary type="html">
     
