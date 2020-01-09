@@ -37,36 +37,11 @@
   </entry>
   
   <entry>
-    <title>Myblog</title>
-    <link href="/2020/01/09/Myblog/"/>
-    <id>/2020/01/09/Myblog/</id>
-    <published>2020-01-09T11:30:21.000Z</published>
-    <updated>2020-01-09T11:31:35.659Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;我们不一样，，hahh就是memory&lt;/p&gt;
-
-        
-      
-    
-    </summary>
-    
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Java垃圾回收机制</title>
     <link href="/2020/01/01/Garbage-Collection/"/>
     <id>/2020/01/01/Garbage-Collection/</id>
     <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-09T11:17:46.604Z</updated>
+    <updated>2020-01-09T11:37:50.608Z</updated>
     
     <summary type="html">
     
@@ -233,10 +208,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>/2019/01/09/hello-world - 副本 (9) - 副本/</id>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
+    <id>/2019/01/09/hello-world - 副本 (8)/</id>
     <published>2019-01-09T14:16:01.000Z</published>
-    <updated>2020-01-09T11:11:20.134Z</updated>
+    <updated>2020-01-09T11:11:38.257Z</updated>
     
     <summary type="html">
     
@@ -255,10 +230,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
-    <id>/2019/01/09/hello-world - 副本 (8)/</id>
+    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>/2019/01/09/hello-world - 副本 (9) - 副本/</id>
     <published>2019-01-09T14:16:01.000Z</published>
-    <updated>2020-01-09T11:11:38.257Z</updated>
+    <updated>2020-01-09T11:11:20.134Z</updated>
     
     <summary type="html">
     
