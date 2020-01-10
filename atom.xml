@@ -3,11 +3,11 @@
   <title>木木</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="/"/>
+  <link href="https://5nptdz.coding-pages.com/"/>
   <updated>2020-01-09T11:14:18.707Z</updated>
-  <id>/</id>
+  <id>https://5nptdz.coding-pages.com/</id>
   
   <author>
     <name>木木</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>理解面向对象</title>
-    <link href="/2020/01/09/Objent-oriented-Understand/"/>
-    <id>/2020/01/09/Objent-oriented-Understand/</id>
+    <link href="https://5nptdz.coding-pages.com/2020/01/09/Objent-oriented-Understand/"/>
+    <id>https://5nptdz.coding-pages.com/2020/01/09/Objent-oriented-Understand/</id>
     <published>2020-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:14:18.707Z</updated>
     
@@ -29,17 +29,17 @@
     
     </summary>
     
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>Java垃圾回收机制</title>
-    <link href="/2020/01/01/Garbage-Collection/"/>
-    <id>/2020/01/01/Garbage-Collection/</id>
+    <link href="https://5nptdz.coding-pages.com/2020/01/01/Garbage-Collection/"/>
+    <id>https://5nptdz.coding-pages.com/2020/01/01/Garbage-Collection/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-09T11:37:50.608Z</updated>
     
@@ -49,17 +49,17 @@
     
     </summary>
     
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>Java虚拟机内存分析理解</title>
-    <link href="/2020/01/01/memory-analyze/"/>
-    <id>/2020/01/01/memory-analyze/</id>
+    <link href="https://5nptdz.coding-pages.com/2020/01/01/memory-analyze/"/>
+    <id>https://5nptdz.coding-pages.com/2020/01/01/memory-analyze/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-09T11:43:15.313Z</updated>
     
@@ -69,17 +69,17 @@
     
     </summary>
     
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>造成内存泄漏的操作</title>
-    <link href="/2020/01/01/memory-leak/"/>
-    <id>/2020/01/01/memory-leak/</id>
+    <link href="https://5nptdz.coding-pages.com/2020/01/01/memory-leak/"/>
+    <id>https://5nptdz.coding-pages.com/2020/01/01/memory-leak/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-09T11:08:12.697Z</updated>
     
@@ -89,17 +89,17 @@
     
     </summary>
     
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(10)/"/>
-    <id>/2019/01/09/hello-world - 副本 (10)/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(10)/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (10)/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:56.090Z</updated>
     
@@ -120,8 +120,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(6)%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>/2019/01/09/hello-world - 副本 (6) - 副本/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(6)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (6) - 副本/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:20.134Z</updated>
     
@@ -142,8 +142,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(7)%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>/2019/01/09/hello-world - 副本 (7) - 副本/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(7)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (7) - 副本/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:20.134Z</updated>
     
@@ -164,8 +164,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(7)/"/>
-    <id>/2019/01/09/hello-world - 副本 (7)/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(7)/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (7)/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:29.722Z</updated>
     
@@ -186,8 +186,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>/2019/01/09/hello-world - 副本 (8) - 副本/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (8) - 副本/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:20.134Z</updated>
     
@@ -208,8 +208,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
-    <id>/2019/01/09/hello-world - 副本 (8)/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(8)/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (8)/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:38.257Z</updated>
     
@@ -230,8 +230,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>/2019/01/09/hello-world - 副本 (9) - 副本/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (9) - 副本/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:20.134Z</updated>
     
@@ -252,8 +252,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)/"/>
-    <id>/2019/01/09/hello-world - 副本 (9)/</id>
+    <link href="https://5nptdz.coding-pages.com/2019/01/09/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(9)/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/09/hello-world - 副本 (9)/</id>
     <published>2019-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:11:46.998Z</updated>
     
@@ -274,8 +274,8 @@
   
   <entry>
     <title>Hexo-Theme-Sakura</title>
-    <link href="/2018/12/12/Hexo-Theme-Sakura/"/>
-    <id>/2018/12/12/Hexo-Theme-Sakura/</id>
+    <link href="https://5nptdz.coding-pages.com/2018/12/12/Hexo-Theme-Sakura/"/>
+    <id>https://5nptdz.coding-pages.com/2018/12/12/Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
     <updated>2020-01-06T18:08:22.166Z</updated>
     
@@ -285,12 +285,12 @@
     
     </summary>
     
-      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="web" scheme="/tags/web/"/>
+      <category term="web" scheme="https://5nptdz.coding-pages.com/tags/web/"/>
     
-      <category term="悦读" scheme="/tags/%E6%82%A6%E8%AF%BB/"/>
+      <category term="悦读" scheme="https://5nptdz.coding-pages.com/tags/%E6%82%A6%E8%AF%BB/"/>
     
   </entry>
   
