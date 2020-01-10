@@ -5,7 +5,7 @@ var _typeof = typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol
   return a && typeof Symbol === 'function' && a.constructor === Symbol && a !== Symbol.prototype ? 'symbol' : typeof a
 }
 
-function cloneObject (a) {
+function cloneObject(a) {
   if (a == null || (typeof a === 'undefined' ? 'undefined' : _typeof(a)) != 'object') return a
   if (a instanceof Date) {
     var e = new Date(a.getDate())
@@ -44,7 +44,7 @@ mashiro_global.ini = new function () {
       get_poem('#poem', '#info')
     }
     $(function () {
-      function waveloop1 () {
+      function waveloop1() {
         $('#banner_wave_1').css({
           'left': '-236px'
         }).animate({
@@ -52,7 +52,7 @@ mashiro_global.ini = new function () {
         }, 25000, 'linear', waveloop1)
       }
 
-      function waveloop2 () {
+      function waveloop2() {
         $('#banner_wave_2').css({
           'left': '0px'
         }).animate({
@@ -91,13 +91,17 @@ mashiro_global.lib = new function () {
   }
   this.addClass = function (ele, className) {
     var el = document.getElementById(ele)
-    if (el.classList) { el.classList.add(className) } else {
+    if (el.classList) {
+      el.classList.add(className)
+    } else {
       el.className += ' ' + className
     }
   }
   this.hasClass = function (ele, className) {
     var el = document.getElementById(ele)
-    if (el.classList) { var e = el.classList.contains(className) } else {
+    if (el.classList) {
+      var e = el.classList.contains(className)
+    } else {
       var e = new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className)
     }
     return e
@@ -111,7 +115,9 @@ mashiro_global.lib = new function () {
       var existingIndex = classes.indexOf(className)
       if (existingIndex >= 0) {
         classes.splice(existingIndex, 1)
-      } else { classes.push(className) }
+      } else {
+        classes.push(className)
+      }
       el.className = classes.join(' ')
     }
   }
@@ -131,7 +137,7 @@ mashiro_global.lib = new function () {
   }
 }()
 
-function setCookie (name, value, days) {
+function setCookie(name, value, days) {
   var expires = ''
   if (days) {
     var date = new Date()
@@ -141,7 +147,7 @@ function setCookie (name, value, days) {
   document.cookie = name + mashiro_option.cookie_version_control + '=' + (value || '') + expires + '; path=/'
 }
 
-function getCookie (name) {
+function getCookie(name) {
   var nameEQ = name + mashiro_option.cookie_version_control + '='
   var ca = document.cookie.split(';')
   for (var i = 0; i < ca.length; i++) {
@@ -152,21 +158,21 @@ function getCookie (name) {
   return null
 }
 
-function removeCookie (name) {
+function removeCookie(name) {
   document.cookie = name + mashiro_option.cookie_version_control + '=; Max-Age=-99999999;'
 }
 
-function jumpTo (url) {
+function jumpTo(url) {
   return mashiro_global.lib.pjax_to_url(url, '#page')
 }
 
-function injectStyles (rule) {
+function injectStyles(rule) {
   var div = $('<div />', {
     html: '&shy;<style>' + rule + '</style>'
   }).appendTo('body')
 }
 
-function imgError (ele, type) {
+function imgError(ele, type) {
   switch (type) {
     case 1:
       if (ele.src.includes('https://cn.gravatar.com/avatar')) {
@@ -233,7 +239,9 @@ mashiro_global.font_control = new function () {
   }
   this.ini = function () {
     if (document.body.clientWidth > 860) {
-      if (!getCookie('font_family') || getCookie('font_family') == 'serif') { $('body').addClass('serif') }
+      if (!getCookie('font_family') || getCookie('font_family') == 'serif') {
+        $('body').addClass('serif')
+      }
     }
     if (getCookie('font_family') == 'sans-serif') {
       $('body').removeClass('sans-serif')
@@ -244,8 +252,8 @@ mashiro_global.font_control = new function () {
 }()
 mashiro_global.font_control.ini()
 
-function code_highlight_style () {
-  function gen_top_bar (i) {
+function code_highlight_style() {
+  function gen_top_bar(i) {
     var attributes = {
       'autocomplete': 'off',
       'autocorrect': 'off',
@@ -283,15 +291,17 @@ try {
   code_highlight_style()
 } catch (e) {}
 
-function copy_code_block () {
+function copy_code_block() {
   $('pre code').each(function (i, block) {
-    $(block).attr({ id: 'hljs-' + i })
+    $(block).attr({
+      id: 'hljs-' + i
+    })
     $(this).after('<a class="copy-code" href="javascript:" data-clipboard-target="#hljs-' + i + '" title="拷贝代码"><i class="fa fa-clipboard" aria-hidden="true"></i></a>')
   })
   var clipboard = new ClipboardJS('.copy-code')
 }
 
-function attach_image () {
+function attach_image() {
   $('#upload-img-file').change(function () {
     if (this.files.length > 10) {
       addComment.createButterbar('每次上传上限为10张.<br>10 files max per request.')
@@ -315,7 +325,8 @@ function attach_image () {
         beforeSend: function (xhr) {
           $('.insert-image-tips').html('<i class="fa fa-spinner rotating" aria-hidden="true"></i>')
           addComment.createButterbar('上传中...<br>Uploading...')
-        }, success: function (res) {
+        },
+        success: function (res) {
           $('.insert-image-tips').html('<i class="fa fa-check" aria-hidden="true"></i>')
           setTimeout(function () {
             $('.insert-image-tips').html('<i class="fa fa-picture-o" aria-hidden="true"></i>')
@@ -325,7 +336,8 @@ function attach_image () {
           lazyload()
           addComment.createButterbar('图片上传成功~<br>Uploaded successfully~')
           grin(res.data.url.replace('https://i.loli.net/', '{UPLOAD}'), type = 'Img')
-        }, error: function () {
+        },
+        error: function () {
           $('.insert-image-tips').html('<i class="fa fa-times" aria-hidden="true" style="color:red"></i>')
           alert('上传失败，请重试.\nUpload failed, please try again.')
           setTimeout(function () {
@@ -337,11 +349,11 @@ function attach_image () {
   })
 }
 
-function clean_upload_images () {
+function clean_upload_images() {
   $('#upload-img-show').html('')
 }
 
-function add_upload_tips () {
+function add_upload_tips() {
   $('<div class="insert-image-tips popup"><i class="fa fa-picture-o" aria-hidden="true"></i><span class="insert-img-popuptext" id="uploadTipPopup">上传图片</span></div><input id="upload-img-file" type="file" accept="image/*" multiple="multiple" class="insert-image-button">').insertAfter($('.form-submit #submit'))
   attach_image()
   $('#upload-img-file').hover(function () {
@@ -353,7 +365,7 @@ function add_upload_tips () {
   })
 }
 
-function click_to_view_image () {
+function click_to_view_image() {
   $('.comment_inline_img').click(function () {
     var temp_url = $(this).attr('src')
     window.open(temp_url)
@@ -361,19 +373,19 @@ function click_to_view_image () {
 }
 click_to_view_image()
 
-function original_emoji_click () {
+function original_emoji_click() {
   $('.emoji-item').click(function () {
     grin($(this).text(), type = 'custom', before = '`', after = '` ')
   })
 }
 original_emoji_click()
 
-function showPopup (ele) {
+function showPopup(ele) {
   var popup = ele.querySelector('#thePopup')
   popup.classList.toggle('show')
 }
 
-function cmt_showPopup (ele) {
+function cmt_showPopup(ele) {
   var popup = $(ele).find('#thePopup')
   popup.addClass('show')
   $(ele).find('input').blur(function () {
@@ -381,14 +393,14 @@ function cmt_showPopup (ele) {
   })
 }
 
-function headertop_down () {
+function headertop_down() {
   var coverOffset = $('#content').offset().top
   $('html,body').animate({
     scrollTop: coverOffset
   }, 600)
 }
 
-function scrollBar () {
+function scrollBar() {
   if (document.body.clientWidth > 860) {
     $(window).scroll(function () {
       var s = $(window).scrollTop()
@@ -400,14 +412,18 @@ function scrollBar () {
         if (result >= 0 && result <= 19) {
           $('#bar').css('background', '#cccccc')
         }
-        if (result >= 20 && result <= 39) { $('#bar').css('background', '#50bcb6') }
+        if (result >= 20 && result <= 39) {
+          $('#bar').css('background', '#50bcb6')
+        }
         if (result >= 40 && result <= 59) {
           $('#bar').css('background', '#85c440')
         }
         if (result >= 60 && result <= 79) {
           $('#bar').css('background', '#f2b63c')
         }
-        if (result >= 80 && result <= 99) { $('#bar').css('background', '#FF0000') }
+        if (result >= 80 && result <= 99) {
+          $('#bar').css('background', '#FF0000')
+        }
         if (result == 100) {
           $('#bar').css('background', '#5aaadb')
         }
@@ -421,21 +437,21 @@ function scrollBar () {
 }
 scrollBar()
 
-function checkBgImgCookie () {
+function checkBgImgCookie() {
   var bgurl = getCookie("bgImgSetting");
-    if (!bgurl) {
-        $("#white-bg").click();
-    } else {
-        $("#" + bgurl).click();
-    }
+  if (!bgurl) {
+    $("#white-bg").click();
+  } else {
+    $("#" + bgurl).click();
+  }
 }
 if (document.body.clientWidth > 860) {
   setTimeout(function () {
-      checkBgImgCookie();
+    checkBgImgCookie();
   }, 500);
 }
 
-function no_right_click () {
+function no_right_click() {
   $('.post-thumb img').bind('contextmenu', function (e) {
     return false
   })
@@ -448,90 +464,90 @@ if (mashiro_global.variables.isNight) {
 
 function checkskinSecter() {
   if (mashiro_global.variables.skinSecter === false) {
-      $(".pattern-center").removeClass('pattern-center').addClass('pattern-center-sakura');
-      $(".headertop-bar").removeClass('headertop-bar').addClass('headertop-bar-sakura');
+    $(".pattern-center").removeClass('pattern-center').addClass('pattern-center-sakura');
+    $(".headertop-bar").removeClass('headertop-bar').addClass('headertop-bar-sakura');
   } else {
-      $(".pattern-center-sakura").removeClass('pattern-center-sakura').addClass('pattern-center');
-      $(".headertop-bar-sakura").removeClass('headertop-bar-sakura').addClass('headertop-bar');
+    $(".pattern-center-sakura").removeClass('pattern-center-sakura').addClass('pattern-center');
+    $(".headertop-bar-sakura").removeClass('headertop-bar-sakura').addClass('headertop-bar');
   }
 }
 ////优化了切换主题背景图片
 $(document).ready(function () {
   function checkskin_bg(a) {
-      return a == "none" ? "" : a
+    return a == "none" ? "" : a
   }
 
   function changeBG() {
-      var cached = $(".menu-list");
-      cached.find("li").each(function () {
-          var tagid = this.id;
-          cached.on("click", "#" + tagid, function () {
-              if (tagid == "white-bg") {
-                  mashiro_global.variables.skinSecter = true;
-                  checkskinSecter();
-              } else {
-                  mashiro_global.variables.skinSecter = false;
-                  checkskinSecter();
-              }
-              if (tagid == "dark-bg") {
-                  $("#night-mode-cover").css("visibility", "visible");
-              } else
-                  $("#night-mode-cover").css("visibility", "hidden");
-              switch (tagid) {
-                  case "white-bg":
-                      $("body").css("background-image", "");
-                      break;
-                  case "sakura-bg":
-                      $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/sakura.png)");
-                      break;
-                  case "gribs-bg":
-                      $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/plaid.jpg)");
-                      break;
-                  case "pixiv-bg":
-                      $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/star.png)");
-                      break;
-                  case "KAdots-bg":
-                      $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/point.png)");
-                      break;
-                  case "totem-bg":
-                      $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/little-monster.png)");
-                      break;
-                  case "bing-bg":
-                      $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/2.png)");
-                      break;
-                  case "dark-bg":
-                      $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/hailan/backimg-1.jpg)");
-                      break;
-              }
-              setCookie("bgImgSetting", tagid, 30);
-              closeSkinMenu();
-          });
+    var cached = $(".menu-list");
+    cached.find("li").each(function () {
+      var tagid = this.id;
+      cached.on("click", "#" + tagid, function () {
+        if (tagid == "white-bg") {
+          mashiro_global.variables.skinSecter = true;
+          checkskinSecter();
+        } else {
+          mashiro_global.variables.skinSecter = false;
+          checkskinSecter();
+        }
+        if (tagid == "dark-bg") {
+          $("#night-mode-cover").css("visibility", "visible");
+        } else
+          $("#night-mode-cover").css("visibility", "hidden");
+        switch (tagid) {
+          case "white-bg":
+            $("body").css("background-image", "");
+            break;
+          case "sakura-bg":
+            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/sakura.png)");
+            break;
+          case "gribs-bg":
+            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/plaid.jpg)");
+            break;
+          case "pixiv-bg":
+            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/star.png)");
+            break;
+          case "KAdots-bg":
+            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/point.png)");
+            break;
+          case "totem-bg":
+            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/little-monster.png)");
+            break;
+          case "bing-bg":
+            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/2.png)");
+            break;
+          case "dark-bg":
+            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/hailan/backimg-1.jpg)");
+            break;
+        }
+        setCookie("bgImgSetting", tagid, 30);
+        closeSkinMenu();
       });
+    });
   }
   changeBG();
 
   function closeSkinMenu() {
-      $(".skin-menu").removeClass('show');
-      setTimeout(function () {
-          $(".changeSkin-gear").css("visibility", "visible");
-      }, 300);
+    $(".skin-menu").removeClass('show');
+    setTimeout(function () {
+      $(".changeSkin-gear").css("visibility", "visible");
+    }, 300);
   }
   $(".changeSkin-gear").click(function () {
-      $(".skin-menu").toggleClass('show');
+    $(".skin-menu").toggleClass('show');
   })
   $(".skin-menu #close-skinMenu").click(function () {
-      closeSkinMenu();
+    closeSkinMenu();
   });
   add_upload_tips();
 });
 
-function nextBG () {
+function nextBG() {
   bgindex = bgindex + 1
   console.log(bg[Math.abs(bgindex % bg.length)])
   $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
 }
 
-function preBG () {
+function preBG() {
   bgindex = bgindex - 1
   console.log(bg[Math.abs(bgindex % bg.length)])
   $('.centerbg').css('background-image', 'url("' + bg[Math.abs(bgindex % bg.length)] + '")')
@@ -551,7 +567,7 @@ if (document.body.clientWidth <= 860 && !window.is_app) {
     scrollFunction()
   }
 
-  function scrollFunction () {
+  function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById('moblieGoTop').style.display = 'block'
     } else {
@@ -559,13 +575,13 @@ if (document.body.clientWidth <= 860 && !window.is_app) {
     }
   }
 
-  function topFunction () {
+  function topFunction() {
     document.body.scrollTop = 0
     document.documentElement.scrollTop = 0
   }
 }
 
-function reload_show_date_time () {
+function reload_show_date_time() {
   BirthDay = new Date('06/02/2017 18:00:00')
   today = new Date()
   timeold = (today.getTime() - BirthDay.getTime())
@@ -577,7 +593,7 @@ function reload_show_date_time () {
   monitorday.innerHTML = daysold
 }
 
-function timeSeriesReload (flag) {
+function timeSeriesReload(flag) {
   if (flag == true) {
     $('#archives span.al_mon').click(function () {
       $(this).next().slideToggle(400)
@@ -642,9 +658,9 @@ var pjaxInit = function () {
     inlojv_js_getqqinfo()
   } catch (e) {};
   lazyload()
-    // if ($("div").hasClass("popcontainer")) {
-    //     loadBotui();
-    // }
+  // if ($("div").hasClass("popcontainer")) {
+  //     loadBotui();
+  // }
   try {
     reload_show_date_time()
   } catch (e) {}
@@ -698,7 +714,7 @@ $.fn.commentPrivate = function () {
   }
 }
 
-function show_date_time () {
+function show_date_time() {
   BirthDay = new Date('06/02/2017 18:00:00')
   today = new Date()
   timeold = (today.getTime() - BirthDay.getTime())
@@ -716,7 +732,7 @@ POWERMODE.colorful = true
 POWERMODE.shake = false
 document.body.addEventListener('input', POWERMODE)
 
-function motionSwitch (ele) {
+function motionSwitch(ele) {
   var motionEles = ['.bili', '.menhera', '.tieba']
   for (var i in motionEles) {
     $(motionEles[i] + '-bar').removeClass('on-hover')
@@ -732,7 +748,7 @@ $('.comt-smilies a').click(function () {
   $(this).parent().hide()
 })
 
-function smileBoxToggle () {
+function smileBoxToggle() {
   $(document).ready(function () {
     $('#emotion-toggle').click(function () {
       $('.emotion-toggle-off').toggle(0)
@@ -743,7 +759,7 @@ function smileBoxToggle () {
 }
 smileBoxToggle()
 
-function grin (tag, type, before, after) {
+function grin(tag, type, before, after) {
   var myField
   if (type == 'custom') {
     tag = before + tag + after
@@ -785,14 +801,14 @@ function grin (tag, type, before, after) {
 //     loadBotui();
 // });
 
-function add_copyright () {
+function add_copyright() {
   document.body.addEventListener('copy', function (e) {
     if (!mashiro_global.is_user_logged_in && window.getSelection().toString().length > 30) {
       setClipboardText(e)
     }
   })
 
-  function setClipboardText (event) {
+  function setClipboardText(event) {
     event.preventDefault()
     var htmlData = '' + '著作权归作者所有。<br>' + '商业转载请联系作者获得授权，非商业转载请注明出处。<br>' + '作者：' + mashiro_option.author_name + '<br>' + '链接：' + window.location.href + '<br>' + '来源：' + mashiro_option.site_name + '<br><br>' + window.getSelection().toString().replace(/\r\n/g, '<br>')
     var textData = '' + '著作权归作者所有。\n' + '商业转载请联系作者获得授权，非商业转载请注明出处。\n' + '' + mashiro_option.author_name + '\n' + '链接：' + window.location.href + '\n' + '来源：' + mashiro_option.site_name + '\n\n' + window.getSelection().toString().replace(/\r\n/g, '\n')
@@ -810,7 +826,7 @@ $(function () {
   inlojv_js_getqqinfo()
 })
 
-function inlojv_js_getqqinfo () {
+function inlojv_js_getqqinfo() {
   var is_get_by_qq = false
   var qq_test = /^[0-9]+$/
   if (!getCookie('user_qq') && !getCookie('user_qq_email') && !getCookie('user_author')) {
@@ -857,7 +873,8 @@ function inlojv_js_getqqinfo () {
         setCookie('user_qq_email', qq + '@qq.com', 30)
         setCookie('user_email', qq + '@qq.com', 30)
         emailAddressFlag = $('input#email').val()
-      }, error: function () {
+      },
+      error: function () {
         if (qq_test.test(qq)) {
           addComment.createButterbar('QQ号不存在（建议不要使用纯数字昵称）')
         }
@@ -880,11 +897,13 @@ function inlojv_js_getqqinfo () {
         if (qq_test.test(qq)) {
           addComment.createButterbar('正在获取QQ头像...')
         }
-      }, success: function (data) {
+      },
+      success: function (data) {
         $('div.comment-user-avatar img').attr('src', data[qq])
         addComment.createButterbar('QQ头像获取成功')
         setCookie('user_avatar', data[qq], 30)
-      }, error: function () {
+      },
+      error: function () {
         if (qq_test.test(qq)) {
           addComment.createButterbar('QQ号不存在（建议不要使用纯数字昵称）')
         }
@@ -941,7 +960,7 @@ function inlojv_js_getqqinfo () {
   })
 }
 
-function get_poem (poem_ele, info_ele) {
+function get_poem(poem_ele, info_ele) {
   var poem = document.querySelector(poem_ele)
   var info = document.querySelector(info_ele)
   var xhr = new XMLHttpRequest()
@@ -970,12 +989,12 @@ function get_poem (poem_ele, info_ele) {
 //     }
 // }
 
-function mail_me () {
+function mail_me() {
   var mail = 'mailto:' + mashiro_option.email_name + '@' + mashiro_option.email_domain
   window.open(mail)
 }
 
-function hearthstone_deck_iframe () {
+function hearthstone_deck_iframe() {
   if ($('iframe').hasClass('hearthstone-deck')) {
     $('.hearthstone-deck').each(function () {
       $(this).attr('height', $(this).width() * 5 / 9 + 'px')
@@ -1015,34 +1034,34 @@ mashiro_global.ini.normalize()
 var home = location.href,
   s = $('#bgvideo')[0],
   Siren = {
-    BSZ: function() {
+    BSZ: function () {
       $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
     },
     TOC: function () {
       if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
         if ($(".pattern-center").length > 0) { //有图的情况
           tocbot.init({
-              // Where to render the table of contents.
-              tocSelector: '.toc', // 放置目录的容器
-              // Where to grab the headings to build the table of contents.
-              contentSelector: '.entry-content', // 正文内容所在
-              // Which headings to grab inside of the contentSelector element.
-              scrollSmooth: true,
-              headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-              headingsOffset: -400,
-              scrollSmoothOffset: -85
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -400,
+            scrollSmoothOffset: -85
           });
         } else {
           tocbot.init({
-              // Where to render the table of contents.
-              tocSelector: '.toc', // 放置目录的容器
-              // Where to grab the headings to build the table of contents.
-              contentSelector: '.entry-content', // 正文内容所在
-              // Which headings to grab inside of the contentSelector element.
-              scrollSmooth: true,
-              headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
-              headingsOffset: -85,
-              scrollSmoothOffset: -85
+            // Where to render the table of contents.
+            tocSelector: '.toc', // 放置目录的容器
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.entry-content', // 正文内容所在
+            // Which headings to grab inside of the contentSelector element.
+            scrollSmooth: true,
+            headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+            headingsOffset: -85,
+            scrollSmoothOffset: -85
           });
         }
         var offsetTop = $('.toc').offset().top - 135
@@ -1060,7 +1079,7 @@ var home = location.href,
     AB: function () {
       if (window.location.pathname.indexOf('about') > -1) {
         $.getScript('/js/botui.js', function () {
-          if (typeof(botui) == undefined && !botui.message) {
+          if (typeof (botui) == undefined && !botui.message) {
             bot_ui_ini()
           }
         })
@@ -1081,7 +1100,14 @@ var home = location.href,
     MJ: function () {
       if (mashiro_option.mathjax == '1') {
         $.getScript('//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', function () {
-          MathJax.Hub.Config({tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}})
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [
+                ['$', '$'],
+                ['\\(', '\\)']
+              ]
+            }
+          })
           var math = document.getElementsByClassName('entry-content')[0]
           MathJax.Hub.Queue(['Typeset', MathJax.Hub, math])
         })
@@ -1099,12 +1125,14 @@ var home = location.href,
         $('body').toggleClass('navOpen')
         $('#main-container,#mo-nav,.openNav').toggleClass('open')
       })
-    }, MNH: function () {
+    },
+    MNH: function () {
       if ($('body').hasClass('navOpen')) {
         $('body').toggleClass('navOpen')
         $('#main-container,#mo-nav,.openNav').toggleClass('open')
       }
-    }, splay: function () {
+    },
+    splay: function () {
       $('#video-btn').addClass('video-pause').removeClass('video-play').show()
       $('.video-stu').css({
         'bottom': '-100px'
@@ -1114,16 +1142,17 @@ var home = location.href,
       })
       $('#banner_wave_1').addClass('banner_wave_hide')
       $('#banner_wave_2').addClass('banner_wave_hide')
-            // for (var i = 0; i < ap.length; i++) {
-            //     try {
-            //         ap[i].destroy()
-            //     } catch (e) {}
-            // }
-            // try {
-            //     hermitInit()
-            // } catch (e) {}
+      // for (var i = 0; i < ap.length; i++) {
+      //     try {
+      //         ap[i].destroy()
+      //     } catch (e) {}
+      // }
+      // try {
+      //     hermitInit()
+      // } catch (e) {}
       s.play()
-    }, spause: function () {
+    },
+    spause: function () {
       $('#video-btn').addClass('video-play').removeClass('video-pause')
       $('.focusinfo').css({
         'top': '49.3%'
@@ -1131,20 +1160,23 @@ var home = location.href,
       $('#banner_wave_1').removeClass('banner_wave_hide')
       $('#banner_wave_2').removeClass('banner_wave_hide')
       s.pause()
-    }, liveplay: function () {
+    },
+    liveplay: function () {
       if (s.oncanplay != undefined && $('.haslive').length > 0) {
         if ($('.videolive').length > 0) {
           Siren.splay()
         }
       }
-    }, livepause: function () {
+    },
+    livepause: function () {
       if (s.oncanplay != undefined && $('.haslive').length > 0) {
         Siren.spause()
         $('.video-stu').css({
           'bottom': '0px'
         }).html('已暂停 ...')
       }
-    }, addsource: function () {
+    },
+    addsource: function () {
       $('.video-stu').html('正在载入视频 ...').css({
         'bottom': '0px'
       })
@@ -1152,7 +1184,8 @@ var home = location.href,
         _t = t[Math.floor(Math.random() * t.length)]
       $('#bgvideo').attr('src', Poi.movies.url + '/' + _t)
       $('#bgvideo').attr('video-name', _t)
-    }, LV: function () {
+    },
+    LV: function () {
       var _btn = $('#video-btn')
       _btn.on('click', function () {
         if ($(this).hasClass('loadvideo')) {
@@ -1190,7 +1223,8 @@ var home = location.href,
       $('#video-add').on('click', function () {
         Siren.addsource()
       })
-    }, AH: function () {
+    },
+    AH: function () {
       if (Poi.windowheight == 'auto') {
         if ($('h1.main-title').length > 0) {
           var _height = $(window).height()
@@ -1207,7 +1241,8 @@ var home = location.href,
       } else {
         $('.headertop').addClass('headertop-bar')
       }
-    }, PE: function () {
+    },
+    PE: function () {
       if ($('.headertop').length > 0) {
         if ($('h1.main-title').length > 0) {
           $('.blank').css({
@@ -1228,7 +1263,8 @@ var home = location.href,
           Siren.livepause()
         }
       }
-    }, CE: function () {
+    },
+    CE: function () {
       $('.comments-hidden').show()
       $('.comments-main').hide()
       $('.comments-hidden').click(function () {
@@ -1271,7 +1307,8 @@ var home = location.href,
       $('#loading').click(function () {
         $('#loading').fadeOut(500)
       })
-    }, NH: function () {
+    },
+    NH: function () {
       var h1 = 0,
         h2 = 50,
         ss = $(document).scrollTop()
@@ -1293,7 +1330,8 @@ var home = location.href,
           ss = s
         }
       })
-    }, XLS: function () {
+    },
+    XLS: function () {
       $body = (window.opera) ? (document.compatMode == 'CSS1Compat' ? $('html') : $('body')) : $('html,body')
       $('body').on('click', '#pagination a', function () {
         $(this).addClass('loading').text('')
@@ -1316,7 +1354,8 @@ var home = location.href,
         })
         return false
       })
-    }, XCS: function () {
+    },
+    XCS: function () {
       var __cancel = jQuery('#cancel-comment-reply-link'),
         __cancel_text = __cancel.text(),
         __list = 'commentwrap'
@@ -1329,31 +1368,32 @@ var home = location.href,
           error: function (request) {
             var t = addComment
             t.createButterbar(request.responseText)
-          }, success: function (data) {
+          },
+          success: function (data) {
             jQuery('textarea').each(function () {
-                this.value = ''
-              })
+              this.value = ''
+            })
             var t = addComment,
-                cancel = t.I('cancel-comment-reply-link'),
-                temp = t.I('wp-temp-form-div'),
-                respond = t.I(t.respondId),
-                post = t.I('comment_post_ID').value,
-                parent = t.I('comment_parent').value
+              cancel = t.I('cancel-comment-reply-link'),
+              temp = t.I('wp-temp-form-div'),
+              respond = t.I(t.respondId),
+              post = t.I('comment_post_ID').value,
+              parent = t.I('comment_parent').value
             if (parent != '0') {
-                jQuery('#respond').before('<ol class="children">' + data + '</ol>')
-              } else if (!jQuery('.' + __list).length) {
-                  if (Poi.formpostion == 'bottom') {
-                    jQuery('#respond').before('<ol class="' + __list + '">' + data + '</ol>')
-                  } else {
-                    jQuery('#respond').after('<ol class="' + __list + '">' + data + '</ol>')
-                  }
-                } else {
-                  if (Poi.order == 'asc') {
-                    jQuery('.' + __list).append(data)
-                  } else {
-                    jQuery('.' + __list).prepend(data)
-                  }
-                }
+              jQuery('#respond').before('<ol class="children">' + data + '</ol>')
+            } else if (!jQuery('.' + __list).length) {
+              if (Poi.formpostion == 'bottom') {
+                jQuery('#respond').before('<ol class="' + __list + '">' + data + '</ol>')
+              } else {
+                jQuery('#respond').after('<ol class="' + __list + '">' + data + '</ol>')
+              }
+            } else {
+              if (Poi.order == 'asc') {
+                jQuery('.' + __list).append(data)
+              } else {
+                jQuery('.' + __list).prepend(data)
+              }
+            }
             t.createButterbar('提交成功(Succeed)')
             lazyload()
             code_highlight_style()
@@ -1363,9 +1403,9 @@ var home = location.href,
             cancel.onclick = null
             t.I('comment_parent').value = '0'
             if (temp && respond) {
-                temp.parentNode.insertBefore(respond, temp)
-                temp.parentNode.removeChild(temp)
-              }
+              temp.parentNode.insertBefore(respond, temp)
+              temp.parentNode.removeChild(temp)
+            }
           }
         })
         return false
@@ -1408,24 +1448,28 @@ var home = location.href,
             t.I('comment').focus()
           } catch (e) {}
           return false
-        }, I: function (e) {
+        },
+        I: function (e) {
           return document.getElementById(e)
-        }, clearButterbar: function (e) {
+        },
+        clearButterbar: function (e) {
           if (jQuery('.butterBar').length > 0) {
-              jQuery('.butterBar').remove()
-            }
-        }, createButterbar: function (message, showtime) {
-            var t = this
-            t.clearButterbar()
-            jQuery('body').append('<div class="butterBar butterBar--center"><p class="butterBar-message">' + message + '</p></div>')
-            if (showtime > 0) {
-                setTimeout("jQuery('.butterBar').remove()", showtime)
-              } else {
-                setTimeout("jQuery('.butterBar').remove()", 6000)
-              }
+            jQuery('.butterBar').remove()
           }
+        },
+        createButterbar: function (message, showtime) {
+          var t = this
+          t.clearButterbar()
+          jQuery('body').append('<div class="butterBar butterBar--center"><p class="butterBar-message">' + message + '</p></div>')
+          if (showtime > 0) {
+            setTimeout("jQuery('.butterBar').remove()", showtime)
+          } else {
+            setTimeout("jQuery('.butterBar').remove()", 6000)
+          }
+        }
       }
-    }, XCP: function () {
+    },
+    XCP: function () {
       $body = (window.opera) ? (document.compatMode == 'CSS1Compat' ? $('html') : $('body')) : $('html,body')
       $('body').on('click', '#comments-navi a', function (e) {
         e.preventDefault()
@@ -1437,9 +1481,10 @@ var home = location.href,
             $('ul.commentwrap').remove()
             $('#loading-comments').slideDown()
             $body.animate({
-                scrollTop: $('#comments-list-title').offset().top - 65
-              }, 800)
-          }, dataType: 'html',
+              scrollTop: $('#comments-list-title').offset().top - 65
+            }, 800)
+          },
+          dataType: 'html',
           success: function (out) {
             result = $(out).find('ul.commentwrap')
             nextlink = $(out).find('#comments-navi')
@@ -1452,38 +1497,40 @@ var home = location.href,
           }
         })
       })
-    }, IA: function () {
+    },
+    IA: function () {
       POWERMODE.colorful = true
       POWERMODE.shake = false
       document.body.addEventListener('input', POWERMODE)
-    }, GT: function () {
+    },
+    GT: function () {
       var offset = 100,
         offset_opacity = 1200,
         scroll_top_duration = 700,
         $back_to_top = $('.cd-top')
       $(window).scroll(function () {
         if ($(this).scrollTop() > offset) {
-            $back_to_top.addClass('cd-is-visible')
-            $('.changeSkin-gear').css('bottom', '0')
-            if ($(window).height() > 950) {
-                $('.cd-top.cd-is-visible').css('top', '0')
-              } else {
-                $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
-              }
+          $back_to_top.addClass('cd-is-visible')
+          $('.changeSkin-gear').css('bottom', '0')
+          if ($(window).height() > 950) {
+            $('.cd-top.cd-is-visible').css('top', '0')
           } else {
-            $('.changeSkin-gear').css('bottom', '-999px')
-            $('.cd-top.cd-is-visible').css('top', '-900px')
-            $back_to_top.removeClass('cd-is-visible cd-fade-out')
+            $('.cd-top.cd-is-visible').css('top', ($(window).height() - 950) + 'px')
           }
+        } else {
+          $('.changeSkin-gear').css('bottom', '-999px')
+          $('.cd-top.cd-is-visible').css('top', '-900px')
+          $back_to_top.removeClass('cd-is-visible cd-fade-out')
+        }
         if ($(this).scrollTop() > offset_opacity) {
-            $back_to_top.addClass('cd-fade-out')
-          }
+          $back_to_top.addClass('cd-fade-out')
+        }
       })
       $back_to_top.on('click', function (event) {
         event.preventDefault()
         $('body,html').animate({
-            scrollTop: 0
-          }, scroll_top_duration)
+          scrollTop: 0
+        }, scroll_top_duration)
       })
     }
   }
@@ -1578,7 +1625,7 @@ $(function () {
   $(document).on('click', '.specsZan', function () {
     $(this).postLike()
   })
-  
+
 })
 var isWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1,
   isOpera = navigator.userAgent.toLowerCase().indexOf('opera') > -1,
@@ -1605,7 +1652,7 @@ if ((isWebkit || isOpera || isIe) && document.getElementById && window.addEventL
 // loadCSS("https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700");
 // loadCSS("https://cdn.jsdelivr.net/gh/moezx/cdn@3.3.9/css/sharejs.css");;
 
-function render (template, context) {
+function render(template, context) {
   var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g
   return template.replace(tokenReg, function (word, slash1, token, slash2) {
     if (slash1 || slash2) {
