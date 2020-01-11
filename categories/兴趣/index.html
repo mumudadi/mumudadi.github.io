@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">造成内存泄漏的操作 | 木木</title>
+  <title itemprop="name">Category: 兴趣 | 木木</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -383,166 +383,105 @@
   </div>
 </header>
 
-      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+      
 <div class="pattern-center-blank"></div>
-
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/2.jpg);" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/2.jpg">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      造成内存泄漏的操作</h1>
-      <p class="entry-census">
-        <span>
-          <a href="https://5nptdz.coding-pages.com/">
-            <img src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/custom/avatar.jpg">
-          </a>
-        </span>
-        <span>
-          <a href="https://5nptdz.coding-pages.com/">mumudadi</a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2020-1-1<span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img data-src="兴趣.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
-
+  <header class="pattern-header ">
+    <h1 class="cat-title">兴趣.zh</h1>
+    <span class="cat-des">
+      <p>兴趣.en</p>
+    </span>
+  </header>
+</div>
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-        <div class="entry-content">
-          <h2 id="建议："><a href="#建议：" class="headerlink" title="建议："></a>建议：</h2><ol>
-<li>在实际开发中，经常会造成系统的崩溃。如下这些操作我们应该注意这些使用场景。</li>
-</ol>
-<ul>
-<li><p>创建大量无用对象</p>
-<p>比如，我们在需要大量拼接字符串时，使用了String而不是StringBuilder。</p>
-<pre><code>String str  = &quot;&quot;;
-for (int i = 0; i&lt;10000; i++){
-    str += i;  //相当于产生了10000个string对象
-}
-</code></pre></li>
-<li><p>静态类集合的使用</p>
-<p>想HashMap、Vector、List等的使用最容易出现内存泄漏，这些静态变量的生命周期和应用程序一致，所有对象Object也不能被释放。</p>
-</li>
-<li><p>各种连接对象(IO流对象、数据库连接对象、网络连接对象)未关闭</p>
-<p>IO流对象、数据库连接对象、网络连接对象等连接对象属于物理连接，和硬盘或者网络连接，不使用时一定要关闭。</p>
-</li>
-<li><p>监听器的使用</p>
-<p>释放对象时，没有删除相应的监听器。</p>
-</li>
-</ul>
-<h2 id="要点："><a href="#要点：" class="headerlink" title="要点："></a>要点：</h2><ol>
-<li>程序员无权调用垃圾回收器。</li>
-<li>程序员可以调用System.gc(),该方法知识通知 JVM，并不是运行垃圾回收器，尽量少用，会申请启动Full GC ，成本高，影响系统性能。</li>
-<li>finalize方法，是Java提供给程序员用来释放对象或资源的方法，但是尽量少用。</li>
-</ol>
-
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏
-            <div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/custom/donate/AliPayQR.jpg"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/custom/donate/WeChanQR.jpg"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2020/01/01/memory-analyze/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/1.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/1.jpg">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                Java虚拟机内存分析理解</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2019/01/10/Live2D/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/3.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/3.jpg">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                live2d</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "IMM34UkPXXl7Mt5n4RAXaYfH-gzGzoHsz",
-        appKey: "5QWKOyJVR6WOwKDKvKfNsxH8",
-        path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
-      })
-  }
-</script>
-
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="https://5nptdz.coding-pages.com/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/custom/avatar.jpg" itemprop="image" alt="mumudadi" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://5nptdz.coding-pages.com/" itemprop="url" rel="author">mumudadi</a>
-            </h3>
-          </div>
+  <!-- 首页默认取最最新文章集 -->
+  
+    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/2019/01/10/Live2D/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
         </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i>一个好奇的人</p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
+        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/2019/01/10/Live2D/">
+    live2d</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2019-1-10</div>
+    <p>
+    看板娘模型</p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/2019/01/10/Live2D/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
+
+
+      <div class="clearer">
+      </div>
+    </main>
+    <!--  -->
+    
+  </div>
 </div>
 
+<!-- 
+  
+    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/2019/01/10/Live2D/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
+        </div>
+        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/anime/3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/2019/01/10/Live2D/">
+    live2d</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2019-1-10</div>
+    <p>
+    看板娘模型</p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/2019/01/10/Live2D/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
 
-
+ -->
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
