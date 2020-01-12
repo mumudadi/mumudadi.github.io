@@ -1078,7 +1078,7 @@ var home = location.href,
     },
     AB: function () {
       if (window.location.pathname.indexOf('about') > -1) {
-        $.getScript('/js/botui.js', function () {
+        $.getScript('/js/botui.min.js', function () {
           if (typeof (botui) == undefined && !botui.message) {
             bot_ui_ini()
           }
@@ -1675,7 +1675,7 @@ String.prototype.render = function (context) {
 
 $(document).ready(function () {
   setTimeout(function () {
-    isFirstLoad = true
+    //isFirstLoad = true
     if (document.body.clientWidth > 860) {
       $('.changeSkin-gear').css('visibility', 'visible')
     }
