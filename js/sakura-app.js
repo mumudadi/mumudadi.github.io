@@ -504,7 +504,7 @@ $(document).ready(function () {
             $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/plaid.jpg)");
             break;
           case "pixiv-bg":
-            $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/star.png)");
+            $("body").css("background-image", "url(https://api.gymxbl.com/images/)");
             break;
           case "KAdots-bg":
             $("body").css("background-image", "url(https://cdn.jsdelivr.net/gh/mumudadi/cdn@latest/img/themebg/point.png)");
