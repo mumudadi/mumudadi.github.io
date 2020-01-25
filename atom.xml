@@ -210,7 +210,7 @@
     <link href="https://5nptdz.coding-pages.com/2020/01/01/notInquire/"/>
     <id>https://5nptdz.coding-pages.com/2020/01/01/notInquire/</id>
     <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-18T14:30:59.039Z</updated>
+    <updated>2020-01-20T10:49:09.882Z</updated>
     
     <summary type="html">
     
@@ -269,23 +269,30 @@
   </entry>
   
   <entry>
-    <title>live2d</title>
-    <link href="https://5nptdz.coding-pages.com/2019/01/10/Live2D/"/>
-    <id>https://5nptdz.coding-pages.com/2019/01/10/Live2D/</id>
+    <title>数据库知识要点</title>
+    <link href="https://5nptdz.coding-pages.com/2019/01/10/database/"/>
+    <id>https://5nptdz.coding-pages.com/2019/01/10/database/</id>
     <published>2019-01-10T14:16:01.000Z</published>
-    <updated>2020-01-16T05:01:44.399Z</updated>
+    <updated>2020-01-25T01:35:42.100Z</updated>
     
     <summary type="html">
     
-      看板娘模型
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、基本概念&quot;&gt;&lt;a href=&quot;#一、基本概念&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念&quot;&gt;&lt;/a&gt;一、基本概念&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h4 id=&quot;主键、外键、超键、候选键&quot;&gt;&lt;a href=&quot;#主键、外键、超键、候选键&quot;
+        
+      
     
     </summary>
     
     
-      <category term="兴趣" scheme="https://5nptdz.coding-pages.com/categories/%E5%85%B4%E8%B6%A3/"/>
+      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="看板娘" scheme="https://5nptdz.coding-pages.com/tags/%E7%9C%8B%E6%9D%BF%E5%A8%98/"/>
+      <category term="数据库" scheme="https://5nptdz.coding-pages.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
