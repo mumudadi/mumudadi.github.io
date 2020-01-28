@@ -1,0 +1,1 @@
+"use strict";(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d0b345c"],{2855:function(n,t,e){e.r(t);var c=e("2877"),a=Object(c.a)({},function(){var n=this,t=n.$createElement;return(n._self._c||t)("div",{staticClass:"app-container"},[n._v("\n 构建工具\n")])},[],!1,null,null,null);t.default=a.exports}}]);

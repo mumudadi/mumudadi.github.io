@@ -1,0 +1,1 @@
+"use strict";(window.webpackJsonp=window.webpackJsonp||[]).push([["chunk-2d20f3bf"],{b380:function(e,n,t){t.r(n);var u=t("2877"),r=Object(u.a)({},function(){var e=this.$createElement;return(this._self._c||e)("router-view")},[],!1,null,null,null);n.default=r.exports}}]);

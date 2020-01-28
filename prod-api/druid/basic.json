@@ -1,0 +1,1 @@
+{"ResultCode":1,"Content":{"Version":"1.1.14","Drivers":["com.mysql.cj.jdbc.Driver","com.alibaba.druid.mock.MockDriver","com.alibaba.druid.proxy.DruidDriver"],"ResetEnable":true,"ResetCount":20,"JavaVMName":"Java HotSpot(TM) 64-Bit Server VM","JavaVersion":"1.8.0_111","JavaClassPath":"target/ruoyi.jar","StartTime":"2019-12-06 15:31:44"}}
