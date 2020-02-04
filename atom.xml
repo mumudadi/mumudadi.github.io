@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://5nptdz.coding-pages.com/"/>
-  <updated>2020-01-09T11:14:18.707Z</updated>
-  <id>https://5nptdz.coding-pages.com/</id>
+  <link href="mumudadi.top/"/>
+  <updated>2020-02-04T13:08:30.457Z</updated>
+  <id>mumudadi.top/</id>
   
   <author>
     <name>木木</name>
@@ -17,9 +17,231 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>動態數據源實現</title>
+    <link href="mumudadi.top/2020/01/10/DynamicDataSource/"/>
+    <id>mumudadi.top/2020/01/10/DynamicDataSource/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:08:30.457Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Dynamic" scheme="mumudadi.top/tags/Dynamic/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spring boot 接口響應json數據格式封裝</title>
+    <link href="mumudadi.top/2020/01/10/AjaxResult/"/>
+    <id>mumudadi.top/2020/01/10/AjaxResult/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:06:47.596Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="spring boot" scheme="mumudadi.top/tags/spring-boot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿帕奇poi導入導出Excel</title>
+    <link href="mumudadi.top/2020/01/10/Excel/"/>
+    <id>mumudadi.top/2020/01/10/Excel/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:09:28.257Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;導入依賴：&quot;&gt;&lt;a href=&quot;#導入依賴：&quot; class=&quot;headerlink&quot; title=&quot;導入依賴：&quot;&gt;&lt;/a&gt;導入依賴：&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;!-- excel工具 --&amp;gt;
+       
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Excel" scheme="mumudadi.top/tags/Excel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PageHelper分頁插件的使用</title>
+    <link href="mumudadi.top/2020/01/10/PageHelper/"/>
+    <id>mumudadi.top/2020/01/10/PageHelper/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:07:09.217Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;使用maven导入jar包&quot;&gt;&lt;a href=&quot;#使用maven导入jar包&quot; class=&quot;headerlink&quot; title=&quot;使用maven导入jar包&quot;&gt;&lt;/a&gt;使用maven导入jar包&lt;/h2&gt;&lt;p&gt;這裏使用spring
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="PageHelper" scheme="mumudadi.top/tags/PageHelper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>系統日志logback使用方式</title>
+    <link href="mumudadi.top/2020/01/10/Log/"/>
+    <id>mumudadi.top/2020/01/10/Log/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:08:52.631Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​         在实际开发中，对于某些关键业务，我们通常需要记录该操作的内容，一个操作调一次记录方法，每次还得去收集参数等等，会造成大量代码重复。 我们希望代码中只有业务相关的操作，在项目中使用注解来完成此项功能。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Log" scheme="mumudadi.top/tags/Log/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通用上傳下載</title>
+    <link href="mumudadi.top/2020/01/10/Upload-Download/"/>
+    <id>mumudadi.top/2020/01/10/Upload-Download/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:08:09.765Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;引入依賴&quot;&gt;&lt;a href=&quot;#引入依賴&quot; class=&quot;headerlink&quot; title=&quot;引入依賴&quot;&gt;&lt;/a&gt;引入依賴&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;!--文件上传工具类 --&amp;gt;
+        &amp;lt;dependency&amp;gt;
+    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="upload" scheme="mumudadi.top/tags/upload/"/>
+    
+      <category term="download" scheme="mumudadi.top/tags/download/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>項目異常處理Exception</title>
+    <link href="mumudadi.top/2020/01/10/Exception/"/>
+    <id>mumudadi.top/2020/01/10/Exception/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:07:28.484Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​         通常一个web框架中，有大量需要处理的异常。比如业务异常，权限不足等等。前端通过弹出提示信息的方式告诉用户出了什么错误。 通常情况下我们用try…..catch…. 对异常进行捕捉处理，但是在实际项目中对业务模块进行异常捕捉，会造成代码重复和繁杂，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Exception" scheme="mumudadi.top/tags/Exception/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>數據權限控制Permission</title>
+    <link href="mumudadi.top/2020/01/10/Permission/"/>
+    <id>mumudadi.top/2020/01/10/Permission/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T13:07:50.114Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​         在实际开发中，需要设置用户只能查看哪些部门的数据，这种情况一般称为数据权限。&lt;/p&gt;
+&lt;p&gt;例如对于销售，财务的数据，它们是非常敏感的，因此要求对数据权限进行控制，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Permission" scheme="mumudadi.top/tags/Permission/"/>
+    
+  </entry>
+  
+  <entry>
     <title>理解面向对象</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/09/Objent-oriented-Understand/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/09/Objent-oriented-Understand/</id>
+    <link href="mumudadi.top/2020/01/09/Objent-oriented-Understand/"/>
+    <id>mumudadi.top/2020/01/09/Objent-oriented-Understand/</id>
     <published>2020-01-09T14:16:01.000Z</published>
     <updated>2020-01-09T11:14:18.707Z</updated>
     
@@ -30,17 +252,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>Java垃圾回收机制</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/Garbage-Collection/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/Garbage-Collection/</id>
+    <link href="mumudadi.top/2020/01/01/Garbage-Collection/"/>
+    <id>mumudadi.top/2020/01/01/Garbage-Collection/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-16T05:02:21.651Z</updated>
     
@@ -51,17 +273,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>Java虚拟机内存分析理解</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/memory-analyze/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/memory-analyze/</id>
+    <link href="mumudadi.top/2020/01/01/memory-analyze/"/>
+    <id>mumudadi.top/2020/01/01/memory-analyze/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-09T11:43:15.313Z</updated>
     
@@ -72,17 +294,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>造成内存泄漏的操作</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/memory-leak/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/memory-leak/</id>
+    <link href="mumudadi.top/2020/01/01/memory-leak/"/>
+    <id>mumudadi.top/2020/01/01/memory-leak/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-09T11:08:12.697Z</updated>
     
@@ -93,17 +315,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="https://5nptdz.coding-pages.com/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>手动实现ArrayList</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/ArrayList/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/ArrayList/</id>
+    <link href="mumudadi.top/2020/01/01/ArrayList/"/>
+    <id>mumudadi.top/2020/01/01/ArrayList/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-16T07:00:47.047Z</updated>
     
@@ -114,17 +336,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="ArrayList" scheme="https://5nptdz.coding-pages.com/tags/ArrayList/"/>
+      <category term="ArrayList" scheme="mumudadi.top/tags/ArrayList/"/>
     
   </entry>
   
   <entry>
     <title>手动实现LinkedList</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/LinkedList/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/LinkedList/</id>
+    <link href="mumudadi.top/2020/01/01/LinkedList/"/>
+    <id>mumudadi.top/2020/01/01/LinkedList/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-16T12:33:08.799Z</updated>
     
@@ -135,17 +357,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="LinkList" scheme="https://5nptdz.coding-pages.com/tags/LinkList/"/>
+      <category term="LinkList" scheme="mumudadi.top/tags/LinkList/"/>
     
   </entry>
   
   <entry>
     <title>手工实现HashMap</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/HashMap/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/HashMap/</id>
+    <link href="mumudadi.top/2020/01/01/HashMap/"/>
+    <id>mumudadi.top/2020/01/01/HashMap/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-17T13:40:46.105Z</updated>
     
@@ -156,17 +378,17 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="HashMap" scheme="https://5nptdz.coding-pages.com/tags/HashMap/"/>
+      <category term="HashMap" scheme="mumudadi.top/tags/HashMap/"/>
     
   </entry>
   
   <entry>
     <title>吸引面试官要点</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/enjoy/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/enjoy/</id>
+    <link href="mumudadi.top/2020/01/01/enjoy/"/>
+    <id>mumudadi.top/2020/01/01/enjoy/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-18T14:14:57.682Z</updated>
     
@@ -177,17 +399,17 @@
     </summary>
     
     
-      <category term="面试" scheme="https://5nptdz.coding-pages.com/categories/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
-      <category term="面试" scheme="https://5nptdz.coding-pages.com/tags/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>接到面试邀请后需要准备</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/interview/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/interview/</id>
+    <link href="mumudadi.top/2020/01/01/interview/"/>
+    <id>mumudadi.top/2020/01/01/interview/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-18T13:54:36.844Z</updated>
     
@@ -198,17 +420,17 @@
     </summary>
     
     
-      <category term="面试" scheme="https://5nptdz.coding-pages.com/categories/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
-      <category term="面试" scheme="https://5nptdz.coding-pages.com/tags/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>技术面试不该问的4大问题</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/notInquire/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/notInquire/</id>
+    <link href="mumudadi.top/2020/01/01/notInquire/"/>
+    <id>mumudadi.top/2020/01/01/notInquire/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-20T10:49:09.882Z</updated>
     
@@ -219,17 +441,17 @@
     </summary>
     
     
-      <category term="面试" scheme="https://5nptdz.coding-pages.com/categories/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
     
     
-      <category term="面试" scheme="https://5nptdz.coding-pages.com/tags/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>职场成功的核武器</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/succeed/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/succeed/</id>
+    <link href="mumudadi.top/2020/01/01/succeed/"/>
+    <id>mumudadi.top/2020/01/01/succeed/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-18T15:33:02.315Z</updated>
     
@@ -240,17 +462,17 @@
     </summary>
     
     
-      <category term="职场" scheme="https://5nptdz.coding-pages.com/categories/%E8%81%8C%E5%9C%BA/"/>
+      <category term="职场" scheme="mumudadi.top/categories/%E8%81%8C%E5%9C%BA/"/>
     
     
-      <category term="职场" scheme="https://5nptdz.coding-pages.com/tags/%E8%81%8C%E5%9C%BA/"/>
+      <category term="职场" scheme="mumudadi.top/tags/%E8%81%8C%E5%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>写好简历的六大要素</title>
-    <link href="https://5nptdz.coding-pages.com/2020/01/01/resume/"/>
-    <id>https://5nptdz.coding-pages.com/2020/01/01/resume/</id>
+    <link href="mumudadi.top/2020/01/01/resume/"/>
+    <id>mumudadi.top/2020/01/01/resume/</id>
     <published>2020-01-01T14:16:01.000Z</published>
     <updated>2020-01-18T13:38:46.367Z</updated>
     
@@ -261,38 +483,10 @@
     </summary>
     
     
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="简历" scheme="https://5nptdz.coding-pages.com/tags/%E7%AE%80%E5%8E%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据库知识要点</title>
-    <link href="https://5nptdz.coding-pages.com/2019/01/10/database/"/>
-    <id>https://5nptdz.coding-pages.com/2019/01/10/database/</id>
-    <published>2019-01-10T14:16:01.000Z</published>
-    <updated>2020-01-25T01:35:42.100Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;一、基本概念&quot;&gt;&lt;a href=&quot;#一、基本概念&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念&quot;&gt;&lt;/a&gt;一、基本概念&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;h4 id=&quot;主键、外键、超键、候选键&quot;&gt;&lt;a href=&quot;#主键、外键、超键、候选键&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://5nptdz.coding-pages.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="数据库" scheme="https://5nptdz.coding-pages.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <category term="简历" scheme="mumudadi.top/tags/%E7%AE%80%E5%8E%86/"/>
     
   </entry>
   
