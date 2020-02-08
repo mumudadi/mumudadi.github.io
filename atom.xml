@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="mumudadi.top/"/>
-  <updated>2020-02-04T13:08:30.457Z</updated>
+  <updated>2020-02-04T13:33:48.278Z</updated>
   <id>mumudadi.top/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>動態數據源實現</title>
-    <link href="mumudadi.top/2020/01/10/DynamicDataSource/"/>
-    <id>mumudadi.top/2020/01/10/DynamicDataSource/</id>
+    <title>PageHelper分頁插件的使用</title>
+    <link href="mumudadi.top/2020/01/10/PageHelper/"/>
+    <id>mumudadi.top/2020/01/10/PageHelper/</id>
     <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:08:30.457Z</updated>
+    <updated>2020-02-04T13:33:48.278Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;​    
+          &lt;h2 id=&quot;使用maven导入jar包&quot;&gt;&lt;a href=&quot;#使用maven导入jar包&quot; class=&quot;headerlink&quot; title=&quot;使用maven导入jar包&quot;&gt;&lt;/a&gt;使用maven导入jar包&lt;/h2&gt;&lt;p&gt;這裏使用spring
         
       
     
@@ -39,16 +39,242 @@
       <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Dynamic" scheme="mumudadi.top/tags/Dynamic/"/>
+      <category term="PageHelper" scheme="mumudadi.top/tags/PageHelper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Security做JWT认证和授权</title>
+    <link href="mumudadi.top/2020/01/10/SpringSecurity-JWT/"/>
+    <id>mumudadi.top/2020/01/10/SpringSecurity-JWT/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-08T04:15:02.502Z</updated>
+    
+    <summary type="html">
+    
+      认证和授权
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="JWT" scheme="mumudadi.top/tags/JWT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>系統接口文檔swagger使用</title>
+    <link href="mumudadi.top/2020/01/10/Interface/"/>
+    <id>mumudadi.top/2020/01/10/Interface/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T15:48:32.121Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;     在现在的开发过程中还有很大一部分公司都是以口口相传的方式来进行前后端的联调，而接口文档很大一部分都只停留在了说说而已的地步，或者写了代码再写文档。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Interface" scheme="mumudadi.top/tags/Interface/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>服務端攔截重複提交</title>
+    <link href="mumudadi.top/2020/01/10/RepeatSubmit/"/>
+    <id>mumudadi.top/2020/01/10/RepeatSubmit/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-07T03:34:12.869Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​        在Web / App项目中，有一些请求或操作会对数据产生影响（比如新增、删除、修改），针对这类请求一般都需要做一些保护，以防止用户有意或无意的重复发起这样的请求导致的数据错乱。&lt;/p&gt;
+&lt;h4 id=&quot;常见处理方案&quot;&gt;&lt;a href=&quot;#常见处理方案&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Repeat" scheme="mumudadi.top/tags/Repeat/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>防範XSS攻擊</title>
+    <link href="mumudadi.top/2020/01/10/XSS/"/>
+    <id>mumudadi.top/2020/01/10/XSS/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-05T15:01:10.888Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;      XSS : 跨站脚本攻击(Cross Site Scripting)，为不和层叠样式表(Cascading Style Sheets,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="XSS" scheme="mumudadi.top/tags/XSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Springboot參數校驗hibernate-validator</title>
+    <link href="mumudadi.top/2020/01/10/hibernate-validator/"/>
+    <id>mumudadi.top/2020/01/10/hibernate-validator/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-06T03:27:33.052Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;  在开发JAVA服务器端代码时，我们会遇到对外部传来的参数合法性进行验证，而hibernate-validator提供了一些常用的参数校验注解，我们可以拿来使用。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hibernate-validator" scheme="mumudadi.top/tags/hibernate-validator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Shiro安全框架使用</title>
+    <link href="mumudadi.top/2020/01/10/Shiro/"/>
+    <id>mumudadi.top/2020/01/10/Shiro/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-05T10:07:30.075Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;      Apache Shiro是Java的一个安全框架。Shiro可以帮助我们完成：认证、授权、加密、会话管理、与Web集成、缓存等。其不仅可以用在 JavaSE环境，也可以用在 JavaEE 环境。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Shiro" scheme="mumudadi.top/tags/Shiro/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定時任務quartz使用</title>
+    <link href="mumudadi.top/2020/01/10/quartz/"/>
+    <id>mumudadi.top/2020/01/10/quartz/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T14:55:23.887Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​         在实际项目开发中Web应用有一类不可缺少的，那就是定时任务。 定时任务的场景可以说非常广泛，比如某些视频网站，购买会员后，每天会给会员送成长值，每月会给会员送一些电影券；
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="quartz" scheme="mumudadi.top/tags/quartz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java面试题整理</title>
+    <link href="mumudadi.top/2020/01/09/InterviewQuestion/"/>
+    <id>mumudadi.top/2020/01/09/InterviewQuestion/</id>
+    <published>2020-01-09T09:16:01.000Z</published>
+    <updated>2020-02-04T14:40:47.925Z</updated>
+    
+    <summary type="html">
+    
+      RT
+    
+    </summary>
+    
+    
+      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>if-else優化</title>
+    <link href="mumudadi.top/2020/01/07/if-else/"/>
+    <id>mumudadi.top/2020/01/07/if-else/</id>
+    <published>2020-01-07T09:16:01.000Z</published>
+    <updated>2020-02-04T14:40:33.591Z</updated>
+    
+    <summary type="html">
+    
+      RT
+    
+    </summary>
+    
+    
+      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
+    
+    
+      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>spring boot 接口響應json數據格式封裝</title>
-    <link href="mumudadi.top/2020/01/10/AjaxResult/"/>
-    <id>mumudadi.top/2020/01/10/AjaxResult/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:06:47.596Z</updated>
+    <link href="mumudadi.top/2020/01/05/AjaxResult/"/>
+    <id>mumudadi.top/2020/01/05/AjaxResult/</id>
+    <published>2020-01-05T09:16:01.000Z</published>
+    <updated>2020-02-04T14:40:56.186Z</updated>
     
     <summary type="html">
     
@@ -72,10 +298,10 @@
   
   <entry>
     <title>阿帕奇poi導入導出Excel</title>
-    <link href="mumudadi.top/2020/01/10/Excel/"/>
-    <id>mumudadi.top/2020/01/10/Excel/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:09:28.257Z</updated>
+    <link href="mumudadi.top/2020/01/05/Excel/"/>
+    <id>mumudadi.top/2020/01/05/Excel/</id>
+    <published>2020-01-05T09:16:01.000Z</published>
+    <updated>2020-02-04T14:40:21.912Z</updated>
     
     <summary type="html">
     
@@ -99,38 +325,11 @@
   </entry>
   
   <entry>
-    <title>PageHelper分頁插件的使用</title>
-    <link href="mumudadi.top/2020/01/10/PageHelper/"/>
-    <id>mumudadi.top/2020/01/10/PageHelper/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:07:09.217Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;使用maven导入jar包&quot;&gt;&lt;a href=&quot;#使用maven导入jar包&quot; class=&quot;headerlink&quot; title=&quot;使用maven导入jar包&quot;&gt;&lt;/a&gt;使用maven导入jar包&lt;/h2&gt;&lt;p&gt;這裏使用spring
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="PageHelper" scheme="mumudadi.top/tags/PageHelper/"/>
-    
-  </entry>
-  
-  <entry>
     <title>系統日志logback使用方式</title>
-    <link href="mumudadi.top/2020/01/10/Log/"/>
-    <id>mumudadi.top/2020/01/10/Log/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:08:52.631Z</updated>
+    <link href="mumudadi.top/2020/01/02/Log/"/>
+    <id>mumudadi.top/2020/01/02/Log/</id>
+    <published>2020-01-02T14:16:01.000Z</published>
+    <updated>2020-02-04T14:40:04.094Z</updated>
     
     <summary type="html">
     
@@ -153,11 +352,38 @@
   </entry>
   
   <entry>
+    <title>動態數據源實現</title>
+    <link href="mumudadi.top/2019/10/13/DynamicDataSource/"/>
+    <id>mumudadi.top/2019/10/13/DynamicDataSource/</id>
+    <published>2019-10-13T14:16:01.000Z</published>
+    <updated>2020-02-04T14:39:43.340Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Dynamic" scheme="mumudadi.top/tags/Dynamic/"/>
+    
+  </entry>
+  
+  <entry>
     <title>通用上傳下載</title>
-    <link href="mumudadi.top/2020/01/10/Upload-Download/"/>
-    <id>mumudadi.top/2020/01/10/Upload-Download/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:08:09.765Z</updated>
+    <link href="mumudadi.top/2019/10/11/Upload-Download/"/>
+    <id>mumudadi.top/2019/10/11/Upload-Download/</id>
+    <published>2019-10-11T14:16:01.000Z</published>
+    <updated>2020-02-04T14:39:30.763Z</updated>
     
     <summary type="html">
     
@@ -184,38 +410,11 @@
   </entry>
   
   <entry>
-    <title>項目異常處理Exception</title>
-    <link href="mumudadi.top/2020/01/10/Exception/"/>
-    <id>mumudadi.top/2020/01/10/Exception/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:07:28.484Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;​         通常一个web框架中，有大量需要处理的异常。比如业务异常，权限不足等等。前端通过弹出提示信息的方式告诉用户出了什么错误。 通常情况下我们用try…..catch…. 对异常进行捕捉处理，但是在实际项目中对业务模块进行异常捕捉，会造成代码重复和繁杂，
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Exception" scheme="mumudadi.top/tags/Exception/"/>
-    
-  </entry>
-  
-  <entry>
     <title>數據權限控制Permission</title>
-    <link href="mumudadi.top/2020/01/10/Permission/"/>
-    <id>mumudadi.top/2020/01/10/Permission/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T13:07:50.114Z</updated>
+    <link href="mumudadi.top/2019/10/10/Permission/"/>
+    <id>mumudadi.top/2019/10/10/Permission/</id>
+    <published>2019-10-10T14:16:01.000Z</published>
+    <updated>2020-02-04T14:39:16.975Z</updated>
     
     <summary type="html">
     
@@ -239,15 +438,22 @@
   </entry>
   
   <entry>
-    <title>理解面向对象</title>
-    <link href="mumudadi.top/2020/01/09/Objent-oriented-Understand/"/>
-    <id>mumudadi.top/2020/01/09/Objent-oriented-Understand/</id>
-    <published>2020-01-09T14:16:01.000Z</published>
-    <updated>2020-01-09T11:14:18.707Z</updated>
+    <title>数据库知识要点</title>
+    <link href="mumudadi.top/2019/10/02/database/"/>
+    <id>mumudadi.top/2019/10/02/database/</id>
+    <published>2019-10-02T09:16:01.000Z</published>
+    <updated>2020-02-04T14:36:43.804Z</updated>
     
     <summary type="html">
     
-      面向过程和面向对象都是对软件分析、设计和开发的一种思想，它知道着人们以不同的方式去分析、设计和开发软件。
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、基本概念&quot;&gt;&lt;a href=&quot;#一、基本概念&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念&quot;&gt;&lt;/a&gt;一、基本概念&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h4 id=&quot;主键、外键、超键、候选键&quot;&gt;&lt;a href=&quot;#主键、外键、超键、候选键&quot;
+        
+      
     
     </summary>
     
@@ -255,20 +461,26 @@
       <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
+      <category term="数据库" scheme="mumudadi.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
   </entry>
   
   <entry>
-    <title>Java垃圾回收机制</title>
-    <link href="mumudadi.top/2020/01/01/Garbage-Collection/"/>
-    <id>mumudadi.top/2020/01/01/Garbage-Collection/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-16T05:02:21.651Z</updated>
+    <title>項目異常處理Exception</title>
+    <link href="mumudadi.top/2019/10/02/Exception/"/>
+    <id>mumudadi.top/2019/10/02/Exception/</id>
+    <published>2019-10-02T09:16:01.000Z</published>
+    <updated>2020-02-04T14:36:59.310Z</updated>
     
     <summary type="html">
     
-      分代垃圾回收机制，是基于这样一个事实：不同的对象的生命周期是不一样的
+      
+      
+        
+        
+          &lt;p&gt;​         通常一个web框架中，有大量需要处理的异常。比如业务异常，权限不足等等。前端通过弹出提示信息的方式告诉用户出了什么错误。 通常情况下我们用try…..catch…. 对异常进行捕捉处理，但是在实际项目中对业务模块进行异常捕捉，会造成代码重复和繁杂，
+        
+      
     
     </summary>
     
@@ -276,100 +488,16 @@
       <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java虚拟机内存分析理解</title>
-    <link href="mumudadi.top/2020/01/01/memory-analyze/"/>
-    <id>mumudadi.top/2020/01/01/memory-analyze/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-09T11:43:15.313Z</updated>
-    
-    <summary type="html">
-    
-      Java虚拟机的内存可以分为三个区域：栈stack、堆heap、方法区method area
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>造成内存泄漏的操作</title>
-    <link href="mumudadi.top/2020/01/01/memory-leak/"/>
-    <id>mumudadi.top/2020/01/01/memory-leak/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-09T11:08:12.697Z</updated>
-    
-    <summary type="html">
-    
-      Java开发中容易造成内存泄漏的操作
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="理解" scheme="mumudadi.top/tags/%E7%90%86%E8%A7%A3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手动实现ArrayList</title>
-    <link href="mumudadi.top/2020/01/01/ArrayList/"/>
-    <id>mumudadi.top/2020/01/01/ArrayList/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-16T07:00:47.047Z</updated>
-    
-    <summary type="html">
-    
-      ArrayList底层用数组实现的存储。特点：查询效率高，增删效率低，线程不安全。
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="ArrayList" scheme="mumudadi.top/tags/ArrayList/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手动实现LinkedList</title>
-    <link href="mumudadi.top/2020/01/01/LinkedList/"/>
-    <id>mumudadi.top/2020/01/01/LinkedList/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-16T12:33:08.799Z</updated>
-    
-    <summary type="html">
-    
-      LinkedList底层用双向链表实现的存储。特点：查询效率低，增删效率高，线程不安全。
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="LinkList" scheme="mumudadi.top/tags/LinkList/"/>
+      <category term="Exception" scheme="mumudadi.top/tags/Exception/"/>
     
   </entry>
   
   <entry>
     <title>手工实现HashMap</title>
-    <link href="mumudadi.top/2020/01/01/HashMap/"/>
-    <id>mumudadi.top/2020/01/01/HashMap/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-17T13:40:46.105Z</updated>
+    <link href="mumudadi.top/2019/05/02/HashMap/"/>
+    <id>mumudadi.top/2019/05/02/HashMap/</id>
+    <published>2019-05-02T07:51:01.000Z</published>
+    <updated>2020-02-04T14:34:48.842Z</updated>
     
     <summary type="html">
     
@@ -386,99 +514,15 @@
   </entry>
   
   <entry>
-    <title>吸引面试官要点</title>
-    <link href="mumudadi.top/2020/01/01/enjoy/"/>
-    <id>mumudadi.top/2020/01/01/enjoy/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-18T14:14:57.682Z</updated>
+    <title>手动实现LinkedList</title>
+    <link href="mumudadi.top/2019/05/02/LinkedList/"/>
+    <id>mumudadi.top/2019/05/02/LinkedList/</id>
+    <published>2019-05-02T07:41:01.000Z</published>
+    <updated>2020-02-04T14:34:30.857Z</updated>
     
     <summary type="html">
     
-      如题
-    
-    </summary>
-    
-    
-      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>接到面试邀请后需要准备</title>
-    <link href="mumudadi.top/2020/01/01/interview/"/>
-    <id>mumudadi.top/2020/01/01/interview/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-18T13:54:36.844Z</updated>
-    
-    <summary type="html">
-    
-      了解公司
-    
-    </summary>
-    
-    
-      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>技术面试不该问的4大问题</title>
-    <link href="mumudadi.top/2020/01/01/notInquire/"/>
-    <id>mumudadi.top/2020/01/01/notInquire/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-20T10:49:09.882Z</updated>
-    
-    <summary type="html">
-    
-      和一个必须要问的问题
-    
-    </summary>
-    
-    
-      <category term="面试" scheme="mumudadi.top/categories/%E9%9D%A2%E8%AF%95/"/>
-    
-    
-      <category term="面试" scheme="mumudadi.top/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>职场成功的核武器</title>
-    <link href="mumudadi.top/2020/01/01/succeed/"/>
-    <id>mumudadi.top/2020/01/01/succeed/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-18T15:33:02.315Z</updated>
-    
-    <summary type="html">
-    
-      点进来就知道了😁
-    
-    </summary>
-    
-    
-      <category term="职场" scheme="mumudadi.top/categories/%E8%81%8C%E5%9C%BA/"/>
-    
-    
-      <category term="职场" scheme="mumudadi.top/tags/%E8%81%8C%E5%9C%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>写好简历的六大要素</title>
-    <link href="mumudadi.top/2020/01/01/resume/"/>
-    <id>mumudadi.top/2020/01/01/resume/</id>
-    <published>2020-01-01T14:16:01.000Z</published>
-    <updated>2020-01-18T13:38:46.367Z</updated>
-    
-    <summary type="html">
-    
-      一份好的简历，不一定能让你面试成功，但是可以让你获得更多的机会！
+      LinkedList底层用双向链表实现的存储。特点：查询效率低，增删效率高，线程不安全。
     
     </summary>
     
@@ -486,7 +530,7 @@
       <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="简历" scheme="mumudadi.top/tags/%E7%AE%80%E5%8E%86/"/>
+      <category term="LinkList" scheme="mumudadi.top/tags/LinkList/"/>
     
   </entry>
   
