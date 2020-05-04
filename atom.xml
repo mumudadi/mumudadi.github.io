@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="mumudadi.top/"/>
-  <updated>2020-02-04T13:33:48.278Z</updated>
+  <updated>2020-02-04T15:48:32.121Z</updated>
   <id>mumudadi.top/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系統接口文檔swagger使用</title>
+    <link href="mumudadi.top/2020/01/10/Interface/"/>
+    <id>mumudadi.top/2020/01/10/Interface/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-04T15:48:32.121Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;     在现在的开发过程中还有很大一部分公司都是以口口相传的方式来进行前后端的联调，而接口文档很大一部分都只停留在了说说而已的地步，或者写了代码再写文档。
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Interface" scheme="mumudadi.top/tags/Interface/"/>
+    
+  </entry>
   
   <entry>
     <title>PageHelper分頁插件的使用</title>
@@ -44,32 +71,11 @@
   </entry>
   
   <entry>
-    <title>Spring Security做JWT认证和授权</title>
-    <link href="mumudadi.top/2020/01/10/SpringSecurity-JWT/"/>
-    <id>mumudadi.top/2020/01/10/SpringSecurity-JWT/</id>
+    <title>Shiro安全框架使用</title>
+    <link href="mumudadi.top/2020/01/10/Shiro/"/>
+    <id>mumudadi.top/2020/01/10/Shiro/</id>
     <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-08T04:15:02.502Z</updated>
-    
-    <summary type="html">
-    
-      认证和授权
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="JWT" scheme="mumudadi.top/tags/JWT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>系統接口文檔swagger使用</title>
-    <link href="mumudadi.top/2020/01/10/Interface/"/>
-    <id>mumudadi.top/2020/01/10/Interface/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-04T15:48:32.121Z</updated>
+    <updated>2020-02-05T10:07:30.075Z</updated>
     
     <summary type="html">
     
@@ -77,7 +83,7 @@
       
         
         
-          &lt;pre&gt;&lt;code&gt;     在现在的开发过程中还有很大一部分公司都是以口口相传的方式来进行前后端的联调，而接口文档很大一部分都只停留在了说说而已的地步，或者写了代码再写文档。
+          &lt;pre&gt;&lt;code&gt;      Apache Shiro是Java的一个安全框架。Shiro可以帮助我们完成：认证、授权、加密、会话管理、与Web集成、缓存等。其不仅可以用在 JavaSE环境，也可以用在 JavaEE 环境。
         
       
     
@@ -87,7 +93,7 @@
       <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Interface" scheme="mumudadi.top/tags/Interface/"/>
+      <category term="Shiro" scheme="mumudadi.top/tags/Shiro/"/>
     
   </entry>
   
@@ -147,6 +153,27 @@
   </entry>
   
   <entry>
+    <title>Spring Security做JWT认证和授权</title>
+    <link href="mumudadi.top/2020/01/10/SpringSecurity-JWT/"/>
+    <id>mumudadi.top/2020/01/10/SpringSecurity-JWT/</id>
+    <published>2020-01-10T14:16:01.000Z</published>
+    <updated>2020-02-08T04:15:02.502Z</updated>
+    
+    <summary type="html">
+    
+      认证和授权
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="JWT" scheme="mumudadi.top/tags/JWT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Springboot參數校驗hibernate-validator</title>
     <link href="mumudadi.top/2020/01/10/hibernate-validator/"/>
     <id>mumudadi.top/2020/01/10/hibernate-validator/</id>
@@ -170,33 +197,6 @@
     
     
       <category term="hibernate-validator" scheme="mumudadi.top/tags/hibernate-validator/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Shiro安全框架使用</title>
-    <link href="mumudadi.top/2020/01/10/Shiro/"/>
-    <id>mumudadi.top/2020/01/10/Shiro/</id>
-    <published>2020-01-10T14:16:01.000Z</published>
-    <updated>2020-02-05T10:07:30.075Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code&gt;      Apache Shiro是Java的一个安全框架。Shiro可以帮助我们完成：认证、授权、加密、会话管理、与Web集成、缓存等。其不仅可以用在 JavaSE环境，也可以用在 JavaEE 环境。
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Shiro" scheme="mumudadi.top/tags/Shiro/"/>
     
   </entry>
   
@@ -438,6 +438,33 @@
   </entry>
   
   <entry>
+    <title>項目異常處理Exception</title>
+    <link href="mumudadi.top/2019/10/02/Exception/"/>
+    <id>mumudadi.top/2019/10/02/Exception/</id>
+    <published>2019-10-02T09:16:01.000Z</published>
+    <updated>2020-02-04T14:36:59.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​         通常一个web框架中，有大量需要处理的异常。比如业务异常，权限不足等等。前端通过弹出提示信息的方式告诉用户出了什么错误。 通常情况下我们用try…..catch…. 对异常进行捕捉处理，但是在实际项目中对业务模块进行异常捕捉，会造成代码重复和繁杂，
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Exception" scheme="mumudadi.top/tags/Exception/"/>
+    
+  </entry>
+  
+  <entry>
     <title>数据库知识要点</title>
     <link href="mumudadi.top/2019/10/02/database/"/>
     <id>mumudadi.top/2019/10/02/database/</id>
@@ -462,33 +489,6 @@
     
     
       <category term="数据库" scheme="mumudadi.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>項目異常處理Exception</title>
-    <link href="mumudadi.top/2019/10/02/Exception/"/>
-    <id>mumudadi.top/2019/10/02/Exception/</id>
-    <published>2019-10-02T09:16:01.000Z</published>
-    <updated>2020-02-04T14:36:59.310Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;​         通常一个web框架中，有大量需要处理的异常。比如业务异常，权限不足等等。前端通过弹出提示信息的方式告诉用户出了什么错误。 通常情况下我们用try…..catch…. 对异常进行捕捉处理，但是在实际项目中对业务模块进行异常捕捉，会造成代码重复和繁杂，
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="mumudadi.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="Exception" scheme="mumudadi.top/tags/Exception/"/>
     
   </entry>
   
